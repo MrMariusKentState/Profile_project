@@ -25,10 +25,11 @@ z = [ {'x': 10, 'y': 20} ]
 x[1][0] = 15
 print(x)
 
-(students[0]['last_name']) = 'Bryant'
-print(students[0])
+students[0]['last_name'] = 'Bryant'
+student0 = students[0]
+print(student0)
 
-(sports_directory['soccer'][0]) = 'Andres'
+sports_directory['soccer'][0] = 'Andres'
 print(sports_directory['soccer'][0])
 
 
@@ -95,25 +96,25 @@ iteratedictionary2('last_name',students)
 # 4. Create a function printInfo(some_dict) that given a dictionary whose values are all lists, prints the name of each key along with the size of its list, and then prints the associated values within each key's list. For example:
 
 dojo = {
-   'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
-   'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
 
 
 def PrintInfo(x,y):
     i = 0
     count = 0
-    locations = []
+    info = []
     while i < len(x[y]):
-        locations.append(x[y][i])
+        info.append(x[y][i])
         i = i + 1
         count = count + 1
     print(count, y.upper())
     j = 0
-    while j < len(locations):
-        print(locations[j])
+    while j < len(info):
+        print(info[j])
         j = j + 1
-    if j == len(locations):
+    if j == len(info):
         print("\n")
 
 

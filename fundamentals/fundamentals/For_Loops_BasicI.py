@@ -12,10 +12,10 @@ for x in range(5,1001,5):
 #3. Counting, the Dojo Way
 
 for x in range(1,101):
-    if x % 5 == 0:
+    if x % 10 == 0:
         print("Coding Dojo")
-    else:
-        print(x)
+    elif x % 5 == 0:
+        print("Coding")
 
 #4. Whoa. That sucker's huge
 
@@ -43,6 +43,6 @@ lownum = 1;
 highnum = 11;
 mult = 4;
 
-for x in range(lownum, highnum):
+for x in range(lownum, highnum + 1):
     if x % mult == 0:
         print(x)

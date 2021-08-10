@@ -11,15 +11,22 @@
 # print(weekend)
 
 
-age = 28
-gpa = 3.3
-my_age_in_ten_years = age+10
-print(my_age_in_ten_years)
+# age = 28
+# gpa = 3.3
+# my_age_in_ten_years = age+10
+# print(my_age_in_ten_years)
 
-is_hungry = True
-if is_hungry:
-    print("I'm hungry!")
+# is_hungry = True
+# if is_hungry:
+#     print("I'm hungry!")
 
-my_name = "Sal"
-print(my_name)
-print(is_hungry)
+# my_name = "Sal"
+# print(my_name)
+# print(is_hungry)
+
+
+def f(x) -> 123:
+    print(x)
+    return x
+
+f(246)
