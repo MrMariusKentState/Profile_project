@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='State.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Election 2020</title>
+    <title>{{state.state}}</title>
+</head>
+<body>
+    <h1>{{state.state}}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th> Presidential Candidate </th>
+                <th> Popular Vote Count </th>
+                <th> Electoral Vote Count </th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Donald Trump (R) </td>
+                <td>{{state.popvoteR}}</td>
+                <td>{{state.evR}}</td>
+            </tr>
+            <tr>
+                <td>Joseph Biden (D)</td>
+                <td>{{state.popvoteD}}</td>
+                <td>{{state.evD}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>* = denotes winner</p>
+</body>
+</html>
