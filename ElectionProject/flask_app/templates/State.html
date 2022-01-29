@@ -10,28 +10,75 @@
     <title>{{state.state}}</title>
 </head>
 <body>
-    <h1>{{state.state}}</h1>
-    <table>
-        <thead>
-            <tr>
-                <th> Presidential Candidate </th>
-                <th> Popular Vote Count </th>
-                <th> Electoral Vote Count </th> 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Donald Trump (R) </td>
-                <td>{{state.popvoteR}}</td>
-                <td>{{state.evR}}</td>
-            </tr>
-            <tr>
-                <td>Joseph Biden (D)</td>
-                <td>{{state.popvoteD}}</td>
-                <td>{{state.evD}}</td>
-            </tr>
-        </tbody>
-    </table>
-    <p>* = denotes winner</p>
+    <div id = "container">
+        <h1 id = "title"> The 2020 U.S. Presidential Election</h1>
+        <p><a href = '/'>Return to main map</a></p>
+        {% if state.id == 2 %}
+            <img src = "/static/Alaska.jpg">
+        {% elif state.id == 3 %}
+            <img src = "/static/Arizona.jpg">
+        {% elif state.id == 5 %}
+            <img src = "/static/California.jpg">
+        {% elif state.id == 6 %}
+            <img src = "/static/Colorado.jpg">
+        {% elif state.id == 12 %}
+            <img src = "/static/Hawaii.jpg">
+        {% elif state.id == 13 %}
+            <img src = "/static/Idaho.jpg">
+        {% elif state.id == 17 %}
+            <img src = "/static/Kansas.jpg"> 
+        {% elif state.id == 27 %}
+            <img src = "/static/Montana.jpg">
+        {% elif state.id == 28 %}
+            <img src = "/static/Nebraska.jpg">
+        {% elif state.id == 29 %}
+            <img src = "/static/Nevada.jpg">
+        {% elif state.id == 32 %}
+            <img src = "/static/New_Mexico.jpg">
+        {% elif state.id == 35 %}
+            <img src = "/static/North_Dakota.jpg">
+        {% elif state.id == 37 %}
+            <img src = "/static/Oklahoma.jpg">
+        {% elif state.id == 38 %}
+            <img src = "/static/Oregon.jpg">
+        {% elif state.id == 42 %}
+            <img src = "/static/south_dakota.jpg">
+        {% elif state.id == 44 %}
+            <img src = "/static/Texas.jpg">
+        {% elif state.id == 45 %}
+            <img src = "/static/Utah.jpg">
+        {% elif state.id == 48 %}
+            <img src = "/static/Washington.jpg">
+        {% elif state.id == 51 %}
+            <img src = "/static/Wyoming.jpg">
+        {% endif %}
+        <h1>{{state.state}}</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th> Presidential Candidate </th>
+                    <th> Popular Vote Count </th>
+                    <th> Electoral Vote Count </th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Donald Trump (R) </td>
+                    <td>{{state.popvoteR}}</td>
+                    <td>{{state.evR}}</td>
+                </tr>
+                <tr>
+                    <td>Joseph Biden (D)</td>
+                    <td>{{state.popvoteD}}</td>
+                    <td>{{state.evD}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>* = denotes winner</p>
+        <p>Individual state graphics provided by: <a href = '/amcharts'>AMcharts.com</a>
+    </div>
+
+    <p>Red color: #F00924</p>
+    <p>Blue color: #3009F0</p>
 </body>
 </html>

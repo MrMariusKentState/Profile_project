@@ -27,3 +27,7 @@ def mapsource():
 @app.route('/nytimes')
 def newyorktimes():
     return redirect ("https://www.nytimes.com/interactive/2020/11/03/us/elections/results-president.html")
+
+@app.route('/amcharts')
+def amcharts():
+    return redirect("https://www.amcharts.com/visited_states/#")
