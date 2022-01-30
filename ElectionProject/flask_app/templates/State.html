@@ -13,42 +13,104 @@
     <div id = "container">
         <h1 id = "title"> The 2020 U.S. Presidential Election</h1>
         <p><a href = '/'>Return to main map</a></p>
-        {% if state.id == 2 %}
+        {% if state.id == 1 %}
+            <img src = "/static/Alabama.jpg">
+        {% elif state.id == 2 %}
             <img src = "/static/Alaska.jpg">
         {% elif state.id == 3 %}
             <img src = "/static/Arizona.jpg">
+        {% elif state.id == 4 %}
+            <img src = "/static/Arkansas.jpg">
         {% elif state.id == 5 %}
             <img src = "/static/California.jpg">
         {% elif state.id == 6 %}
             <img src = "/static/Colorado.jpg">
+        {% elif state.id == 7 %}
+            <img src = "/static/Connecticut.jpg">
+        {% elif state.id == 8 %}
+            <img src = "/static/Delaware.jpg">
+        {% elif state.id == 9 %}
+            <img src = "/static/DC.jpg">
+        {% elif state.id == 10 %}
+            <img src = "/static/Florida.jpg">
+        {% elif state.id == 11 %}
+            <img src = "/static/Georgia.jpg">
         {% elif state.id == 12 %}
             <img src = "/static/Hawaii.jpg">
         {% elif state.id == 13 %}
             <img src = "/static/Idaho.jpg">
+        {% elif state.id == 14 %}
+            <img src = "/static/Illinois.jpg">
+        {% elif state.id == 15 %}
+            <img src = "/static/Indiana.jpg">
+        {% elif state.id == 16 %}
+            <img src = "/static/Iowa.jpg">
         {% elif state.id == 17 %}
-            <img src = "/static/Kansas.jpg"> 
+            <img src = "/static/Kansas.jpg">
+        {% elif state.id == 18 %}
+            <img src = "/static/Kentucky.jpg">  
+        {% elif state.id == 19 %}
+            <img src = "/static/Louisiana.jpg">
+        {% elif state.id == 20 %}
+            <img src = "/static/Maine.jpg">
+        {% elif state.id == 21 %}
+            <img src = "/static/Maryland.jpg">
+        {% elif state.id == 22 %}
+            <img src = "/static/Massachusetts.jpg">
+        {% elif state.id == 25 %}
+            <img src = "/static/Mississippi.jpg">
+        {% elif state.id == 26 %}
+            <img src = "/static/Missouri.jpg">
+        {% elif state.id == 24 %}
+            <img src = "/static/Minnesota.jpg">
         {% elif state.id == 27 %}
             <img src = "/static/Montana.jpg">
         {% elif state.id == 28 %}
             <img src = "/static/Nebraska.jpg">
         {% elif state.id == 29 %}
             <img src = "/static/Nevada.jpg">
+        {% elif state.id == 30 %}
+            <img src = "/static/new_hampshire.jpg">
+        {% elif state.id == 31 %}
+            <img src = "/static/new_jersey.jpg">
         {% elif state.id == 32 %}
             <img src = "/static/New_Mexico.jpg">
+        {% elif state.id == 33 %}
+            <img src = "/static/new_york.jpg">
+        {% elif state.id == 34 %}
+            <img src = "/static/north_carolina.jpg">
         {% elif state.id == 35 %}
             <img src = "/static/North_Dakota.jpg">
+        {% elif state.id == 36 %}
+            <img src = "/static/Ohio.jpg">
         {% elif state.id == 37 %}
             <img src = "/static/Oklahoma.jpg">
         {% elif state.id == 38 %}
             <img src = "/static/Oregon.jpg">
+        {% elif state.id == 39 %}
+            <img src = "/static/Pennsylvania.jpg">
+        {% elif state.id == 40 %}
+            <img src = "/static/rhode_island.jpg">
+        {% elif state.id == 41 %}
+            <img src = "/static/south_carolina.jpg">
         {% elif state.id == 42 %}
             <img src = "/static/south_dakota.jpg">
+        {% elif state.id == 43 %}
+            <img src = "/static/Tennessee.jpg">
         {% elif state.id == 44 %}
             <img src = "/static/Texas.jpg">
         {% elif state.id == 45 %}
             <img src = "/static/Utah.jpg">
+        {% elif state.id == 46 %}
+            <img src = "/static/Vermont.jpg">
+        {% elif state.id == 47 %}
+            <img src = "/static/Virginia.jpg">
         {% elif state.id == 48 %}
             <img src = "/static/Washington.jpg">
+        {% elif state.id == 49 %}
+            <img src = "/static/west_virginia.jpg">
+        {% elif state.id == 50 %}
+            <img src = "/static/Wisconsin.jpg">
         {% elif state.id == 51 %}
             <img src = "/static/Wyoming.jpg">
         {% endif %}
@@ -74,11 +136,11 @@
                 </tr>
             </tbody>
         </table>
-        <p>* = denotes winner</p>
-        <p>Individual state graphics provided by: <a href = '/amcharts'>AMcharts.com</a>
+        <p class = "bottomtext">* = denotes winner</p>
+        <p class = "bottomtext">Individual state graphics provided by: <a href = '/amcharts'>AMcharts.com</a>
     </div>
-
+<!-- 
     <p>Red color: #F00924</p>
-    <p>Blue color: #3009F0</p>
+    <p>Blue color: #3009F0</p> -->
 </body>
 </html>
