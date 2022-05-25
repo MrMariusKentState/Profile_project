@@ -1,14 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: lightblue;
 }
 
 #container {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 980px;
-    background-color: lightblue;
+    width: 1000px;
+    
 }
 
 #profile {
@@ -22,9 +23,14 @@
 
 #right-side {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-bottom: 20px;
     vertical-align: bottom;
+}
+
+
+#profile, #right-side {
+    display: inline-block;
 }
 
 
@@ -38,3 +44,16 @@
     height: 35px;
 }
 
+
+#linkedin, #linkedinheader {
+    display: inline-block
+}
+
+
+#github, #githubheader {
+    display: inline-block;
+}
+
+#researchgate, #researchgateheader {
+    display: inline-block;
+}
