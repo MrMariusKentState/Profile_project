@@ -57,3 +57,19 @@
 #researchgate, #researchgateheader {
     display: inline-block;
 }
+
+.techheader {
+    text-align: center;
+}
+
+#tech_items{
+    border: solid black;
+}
+
+#techleft, #techright {
+    display: inline-block;
+}
+
+#videos {
+    text-align: center;
+}
