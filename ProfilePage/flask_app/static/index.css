@@ -84,3 +84,8 @@
 #videos {
     text-align: center;
 }
+
+.citation {
+    font-weight: bold;
+    color: blue;
+}
