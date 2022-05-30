@@ -68,7 +68,18 @@
 
 #techleft, #techright {
     display: inline-block;
+    vertical-align: top;
+    margin: 10px;
 }
+
+#techleft {
+    margin-left: 20px;
+}
+
+#techright {
+    margin-left: 130px;
+}
+
 
 #videos {
     text-align: center;
