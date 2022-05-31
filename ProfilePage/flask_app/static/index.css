@@ -89,3 +89,19 @@
     font-weight: bold;
     color: blue;
 }
+
+#leftvideos, #rightvideos {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+#leftvideos {
+    margin-left: 20px;
+    width: 450px;
+}
+
+#rightvideos {
+    margin-left: 20px;
+    width: 450px;
+}
