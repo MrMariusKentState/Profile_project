@@ -62,7 +62,7 @@
     text-align: center;
 }
 
-#tech_items{
+.tech_items{
     border: solid black;
 }
 
@@ -117,3 +117,4 @@
 #policeone {
     margin-top: 90px;
 }
+
