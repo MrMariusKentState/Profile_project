@@ -69,7 +69,7 @@
 #techleft, #techright {
     display: inline-block;
     vertical-align: top;
-    margin: 10px;
+    margin: 5px;
 }
 
 #techleft {
@@ -118,3 +118,15 @@
     margin-top: 90px;
 }
 
+.italic {
+    font-style:italic;
+    font-weight: bold;
+}
+
+.policevid{
+    margin-top: 35px;
+}
+
+.bott{
+    margin-top: 20px;
+}
